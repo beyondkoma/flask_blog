@@ -1,5 +1,6 @@
 # coding=utf-8
 from flask import Flask
+from plugin.ext import db
 
 app = Flask(__name__)
 

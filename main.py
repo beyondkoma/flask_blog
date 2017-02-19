@@ -1,5 +1,5 @@
 # coding=utf-8
-from flask import Flask, url_for
+from flask import Flask
 
 app = Flask(__name__)
 
@@ -13,14 +13,6 @@ def hello_world():
 def about():
     return 'Hello World!'
 
-
-# @app.route('/item/1/')
-# def item(id):
-#     pass
-
-# with app.test_request_context():
-#     print url_for('item', id='1')
-#     print url_for('item', id=2, next='/')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=9000, debug=True)
